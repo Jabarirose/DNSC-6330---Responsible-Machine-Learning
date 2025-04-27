@@ -22,18 +22,12 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 * **License**: MIT
 * **Model implementation code**: [DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
 
-### Intended Use
-
-OLD: 
-* **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
-* **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
-* **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
-
-NEW: 
-* **Describe the business value of your group’s best remediated model**: This model is intended solely for educational purposes and holds no business value.
-∗ **Describe how your group’s best remediated model is designed to be used**: 
-∗ **Describe the intended users for your group’s best remediated model**:
-∗ **State whether your group’s best remediated model can or cannot be used for any additional purposes**: 
+### Intended Use - DONE
+ 
+- **Describe the business value of your group’s best remediated model**: This model is not intended to generate any value for business purposes.
+- **Describe how your group’s best remediated model is designed to be used**: This model is designed solely for educational purposes.
+- **Describe the intended users for your group’s best remediated model**: This model is designed for students and individuals interested in learning about bias in machine learning models.
+- **State whether your group’s best remediated model can or cannot be used for any additional purposes**: Our model cannot be used for any additional purposes. Any use beyond an educational example is out-of-scope.
 
 ### Training Data
 
@@ -67,7 +61,7 @@ NOTES: Have External Link to data
   * Training rows: 15,000
   * Validation rows: 7,500
 
-### Evaluation Data
+### Evaluation Data - DONE
 
 - **State the source of evaluation (or “test”) data**: [GW DNSC 6330 Class Github](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
 - **State the number of rows in evaluation (or “test”) data**: 19831 rows
