@@ -72,7 +72,7 @@ NOTES: Have External Link to data
 NOTES: Have External Link to data
 
 NEW:
-- **State the source of evaluation (or “test”) data**: GW DNSC 6330 Class Github, [Visit GitHub]([https://github.com](https://github.com/jphall663/GWU_rml/tree/master/assignments/data)), email `jphall@gwu.edu` for more information
+- **State the source of evaluation (or “test”) data**: GW DNSC 6330 Class Github, [Visit GitHub](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
 - **State the number of rows in evaluation (or “test”) data**: 19831 rows
 - **State any differences in columns between training and evaluation (or “test”) data**: The test data does not contain the y-column/target variable 'high_priced'.
 
