@@ -12,7 +12,7 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 
 # Predicting High Priced Loans Model Card
 
-### Basic Information
+### Basic Information - STARTED
 
 - **Person or organization developing model**: Patrick Hall (jphall@gwu.edu), Hanna Courtot (Hanna.Courtot@gwu.edu), Elias Makanganise (eliasm@gwu.edu), Jabari Rose (Jabari.rose@gwmail.gwu.edu) and Pratyush Singhal (pratyush.singhal@gwu.edu)
 - **Model creation date**: August, 2021
