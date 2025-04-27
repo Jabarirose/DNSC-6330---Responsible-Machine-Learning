@@ -87,6 +87,8 @@ NOTE: You should briefly address your other models as “alternative approaches�
 - **State the values of the metrics for training, validation, and evaluation (or “test”) data – evaluation (or “test”) metrics come from the most recent class full evaluation results, link under Assignment 1.**: 
 
 NOTE: Use Validation and test AUC from bottom assignment 5!
+NOTE: Take average of all 5 AUC from assignment 5!
+
 
 | Train AUC | Validation AUC | Test AUC |
 | ------ | ------- | -------- |
@@ -107,6 +109,8 @@ Table 2. Validation AIR values for race and sex groups.
 - **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM), extreme gadient boosting (XGBoost) and explainable boosting machine (EBM). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
 
 (**HINT**: Test AUC taken from https://github.com/jphall663/GWU_rml/blob/master/assignments/model_eval_2023_06_21_12_52_47.csv)
+
+NOTE: Add something other than a heat map, use something more interesting!
 
 #### Correlation Heatmap - DONE
 
