@@ -24,22 +24,23 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 
 ### Intended Use - DONE
  
-- **Describe the business value of your group’s best remediated model**: This model is not intended to generate any value for business purposes.
+- **Describe the business value of your group’s best remediated model**: This model is not intended to generate any value for commercial/business purposes.
 - **Describe how your group’s best remediated model is designed to be used**: This model is designed solely for educational purposes.
 - **Describe the intended users for your group’s best remediated model**: This model is designed for students and individuals interested in learning about bias in machine learning models.
 - **State whether your group’s best remediated model can or cannot be used for any additional purposes**: Our model cannot be used for any additional purposes. Any use beyond an educational example is out-of-scope.
 
-### Training Data
+### Training Data - STARTED
 
-NOTES: Have External Link to data
+- **State the source of training data**: [GW DNSC 6330 Class Github Training Data Zip](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
+- **State how training data was divided into training and validation data**: 70% training and 30% validation
+- **State the number of rows in training and validation data**: 112253 training rows and 48085 validation rows
+- **Define the meaning of all training data columns**: 
+- **Define the meaning of all engineered columns**: 
 
-∗ **State the source of training data**: 
-∗ **State how training data was divided into training and validation data**: 
-∗ **State the number of rows in training and validation data**: 
-∗ **Define the meaning of all training data columns**: 
-∗ **Define the meaning of all engineered columns**: 
 
-* Data dictionary: 
+NOTE: UPDATE WITH Data dictionary is in assignment 1 
+
+* Data dictionary:
 
 | Name | Modeling Role | Measurement Level| Description|
 | ---- | ------------- | ---------------- | ---------- |
@@ -55,15 +56,10 @@ NOTES: Have External Link to data
 | **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
 | **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
 
-* **Source of training data**: GWU Blackboard, email `jphall@gwu.edu` for more information
-* **How training data was divided into training and validation data**: 50% training, 25% validation, 25% test
-* **Number of rows in training and validation data**:
-  * Training rows: 15,000
-  * Validation rows: 7,500
 
 ### Evaluation Data - DONE
 
-- **State the source of evaluation (or “test”) data**: [GW DNSC 6330 Class Github](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
+- **State the source of evaluation (or “test”) data**: [GW DNSC 6330 Class Github Test Data Zip](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
 - **State the number of rows in evaluation (or “test”) data**: 19831 rows
 - **State any differences in columns between training and evaluation (or “test”) data**: The test data does not contain the y-column/target variable 'high_priced'.
 
@@ -83,16 +79,18 @@ rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
               'n_jobs': 4, 'early_stopping_rounds': 100, 'random_state': 12345}
 ```
 
-### Quantitative Analysis
+### Quantitative Analysis - STARTED
 
 NOTE: You should briefly address your other models as “alternative approaches” in the Quantitative analysis section, and point to why your main model is a better choice.
 
 - **State the metrics used to evaluate your group’s best remediated model**: Area Under the Curve (AUC) and Adverse Impact Ratio (AIR)
 - **State the values of the metrics for training, validation, and evaluation (or “test”) data – evaluation (or “test”) metrics come from the most recent class full evaluation results, link under Assignment 1.**: 
 
+NOTE: Use Validation and test AUC from bottom assignment 5!
+
 | Train AUC | Validation AUC | Test AUC |
 | ------ | ------- | -------- |
-| 0.3456 | 0.7891  | 0.7687* |
+| 0.7494 | 0.7891  | 0.7687* |
 
 Table 1. AUC values across data partitions. 
 
@@ -106,7 +104,7 @@ Table 1. AUC values across data partitions.
 Table 2. Validation AIR values for race and sex groups. 
 
 - **Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group’s best remediated model.**: 
-- **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM), Extreem GRadient Boosting (XGBoost) and explainable boosting machine (EBM). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
+- **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM), extreme gadient boosting (XGBoost) and explainable boosting machine (EBM). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
 
 (**HINT**: Test AUC taken from https://github.com/jphall663/GWU_rml/blob/master/assignments/model_eval_2023_06_21_12_52_47.csv)
 
