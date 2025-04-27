@@ -10,17 +10,16 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 DISCLAIMER: This notebook is not legal or compliance advice.
 
-
 # Predicting High Priced Loans Model Card
 
 ### Basic Information
 
-* **Person or organization developing model**: Patrick Hall (jphall@gwu.edu), Hanna Courtot (Hanna.Courtot@gwu.edu), Elias Makanganise (eliasm@gwu.edu), Jabari Rose (Jabari.rose@gwmail.gwu.edu) and Pratyush Singhal (pratyush.singhal@gwu.edu)
-* **Model creation date**: August, 2021
-* **Model modification date**: April, 2025
-* **Model version**: 1.0
-* **License**: MIT
-* **Model implementation code**: [DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
+- **Person or organization developing model**: Patrick Hall (jphall@gwu.edu), Hanna Courtot (Hanna.Courtot@gwu.edu), Elias Makanganise (eliasm@gwu.edu), Jabari Rose (Jabari.rose@gwmail.gwu.edu) and Pratyush Singhal (pratyush.singhal@gwu.edu)
+- **Model creation date**: August, 2021
+- **Model modification date**: April, 2025
+- **Model version**: 1.0
+- **License**: MIT
+- **Model implementation code**: [DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
 
 ### Intended Use - DONE
  
@@ -37,10 +36,9 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 - **Define the meaning of all training data columns**: 
 - **Define the meaning of all engineered columns**: 
 
-
 NOTE: UPDATE WITH Data dictionary is in assignment 1 
 
-* Data dictionary:
+- **Data dictionary**:
 
 | Name | Modeling Role | Measurement Level| Description|
 | ---- | ------------- | ---------------- | ---------- |
@@ -55,7 +53,6 @@ NOTE: UPDATE WITH Data dictionary is in assignment 1
 | **BILL_AMT1 - BILL_AMT6** | inputs | float | amount of bill statement; BILL_AMNT1 = amount of bill statement in September, 2005; BILL_AMT2 = amount of bill statement in August, 2005; ...; BILL_AMT6 = amount of bill statement in April, 2005 |
 | **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
 | **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
-
 
 ### Evaluation Data - DONE
 
@@ -122,11 +119,11 @@ Figure 1. Correlation matrix for input features.
 
 NOTE: only place you write a short paragraph about bias, performance can drop during a recession
 
-* **Describe potential negative impacts of using your group’s best remediated model:**
+- **Describe potential negative impacts of using your group’s best remediated model:**
   - Consider math or software problems
   - Consider real-world risks: who, what, when and how?
 
-* **Describe potential uncertainties relating to the impacts of using your group’s best remediated model:**
+- **Describe potential uncertainties relating to the impacts of using your group’s best remediated model:**
   - Consider math or software problems
   - Consider real-world risks: who, what, when and how?
 
