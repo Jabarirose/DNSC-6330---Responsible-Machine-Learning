@@ -110,9 +110,9 @@ Table 2. Validation AIR values for race and sex groups.
 
 #### Correlation Heatmap
 
-![Correlation Heatmap](download.png)
+![Correlation Heatmap](Correlation_Matrix_for_Input_Features.png)
 
-Figure 1. Correlation heatmap for input features. 
+Figure 1. Correlation matrix for input features. 
 
 ### Ethical Considerations
 
