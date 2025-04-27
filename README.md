@@ -85,17 +85,10 @@ rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
 
 ### Quantitative Analysis
 
-NOTE: You should briefly address your other models as “alternative approaches” in
-the Quantitative analysis section, and point to why your main model is a better choice.
+NOTE: You should briefly address your other models as “alternative approaches” in the Quantitative analysis section, and point to why your main model is a better choice.
 
-NEW:
-∗ **State the metrics used to evaluate your group’s best remediated model**: 
-∗ **State the values of the metrics for training, validation, and evaluation (or “test”) data – evaluation (or “test”) metrics come from the most recent class full evaluation results, link under Assignment 1.**: 
-∗ **Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group’s best remediated model.**: 
-∗ **Address other alternative models considered**: 
-
-
-* Models were assessed primarily with AUC and AIR. See details below:
+- **State the metrics used to evaluate your group’s best remediated model**: Area Under the Curve (AUC) and Adverse Impact Ratio (AIR)
+- **State the values of the metrics for training, validation, and evaluation (or “test”) data – evaluation (or “test”) metrics come from the most recent class full evaluation results, link under Assignment 1.**: 
 
 | Train AUC | Validation AUC | Test AUC |
 | ------ | ------- | -------- |
@@ -112,6 +105,10 @@ Table 1. AUC values across data partitions.
 
 Table 2. Validation AIR values for race and sex groups. 
 
+- **Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group’s best remediated model.**: 
+- **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM), Extreem GRadient Boosting (XGBoost) and explainable boosting machine (EBM). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
+ 
+
 (**HINT**: Test AUC taken from https://github.com/jphall663/GWU_rml/blob/master/assignments/model_eval_2023_06_21_12_52_47.csv)
 
 #### Correlation Heatmap
@@ -122,7 +119,7 @@ Figure 1. Correlation heatmap for input features.
 
 ### Ethical Considerations
 
-NOTE: only place your might write a short paragraph
+NOTE: only place you write a short paragraph about bias, performance can drop during a recession
 
 * **Describe potential negative impacts of using your group’s best remediated model:**
   - Consider math or software problems
