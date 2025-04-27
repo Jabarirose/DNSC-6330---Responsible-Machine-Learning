@@ -30,7 +30,7 @@ OLD:
 * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
 NEW: 
-* **Describe the business value of your group’s best remediated model**: 
+* **Describe the business value of your group’s best remediated model**: This model is intended solely for educational purposes and holds no business value.
 ∗ **Describe how your group’s best remediated model is designed to be used**: 
 ∗ **Describe the intended users for your group’s best remediated model**:
 ∗ **State whether your group’s best remediated model can or cannot be used for any additional purposes**: 
@@ -91,7 +91,6 @@ OLD:
 * **Type of model**: Decision Tree 
 * **Software used to implement the model**: Python, scikit-learn
 * **Version of the modeling software**: 0.22.2.post1
-* **Hyperparameters or other settings of your model**:
 
 NEW:
 ∗ **State the columns used as inputs in your group’s best remediated model**: 
@@ -102,12 +101,10 @@ NEW:
 ∗ **State the hyperparameters or other settings of your group’s best remediated model**:
 
 ```
-DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
-                       max_depth=6, max_features=None, max_leaf_nodes=None,
-                       min_impurity_decrease=0.0, min_impurity_split=None,
-                       min_samples_leaf=1, min_samples_split=2,
-                       min_weight_fraction_leaf=0.0, presort='deprecated',
-                       random_state=12345, splitter='best') 
+rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
+              'outer_bags': 8, 'inner_bags': 4, 'learning_rate': 0.05,
+              'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 3,
+              'n_jobs': 4, 'early_stopping_rounds': 100, 'random_state': 12345}
 
 ```
 ### Quantitative Analysis
