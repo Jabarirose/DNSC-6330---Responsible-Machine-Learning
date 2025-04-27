@@ -67,18 +67,19 @@ NOTES: Have External Link to data
   * Training rows: 15,000
   * Validation rows: 7,500
 
-### Test Data
-* **Source of test data**: GWU Blackboard, email `jphall@gwu.edu` for more information
-* **Number of rows in test data**: 7,500
-* **State any differences in columns between training and test data**: None
-
 ### Evaluation Data
 
 NOTES: Have External Link to data
 
+NEW:
 ∗ **State the source of evaluation (or “test”) data**: 
 ∗ **State the number of rows in evaluation (or “test”) data**: 
 ∗ **State any differences in columns between training and evaluation (or “test”) data**: 
+
+OLD: 
+* **Source of test data**: GWU Blackboard, email `jphall@gwu.edu` for more information
+* **Number of rows in test data**: 7,500
+* **State any differences in columns between training and test data**: None
 
 ### Model details
 OLD: 
@@ -147,6 +148,8 @@ Table 2. Validation AIR values for race and sex groups.
 Figure 1. Correlation heatmap for input features. 
 
 ### Ethical Considerations
+
+NOTE: only place your might write a short paragraph
 
 * **Describe potential negative impacts of using your group’s best remediated model:**
   - Consider math or software problems
