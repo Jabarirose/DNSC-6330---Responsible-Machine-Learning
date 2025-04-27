@@ -81,26 +81,13 @@ OLD:
 * **Number of rows in test data**: 7,500
 * **State any differences in columns between training and test data**: None
 
-### Model details
-OLD: 
-* **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
-* **Type of model**: Decision Tree 
-* **Software used to implement the model**: Python, scikit-learn
-* **Version of the modeling software**: 0.22.2.post1
+### Model details - DONE
 
-NEW:
-∗ **State the columns used as inputs in your group’s best remediated model**: 
-
-```
-rem_x_names = ['debt_to_income_ratio_missing', 'conforming', 'term_360',
-               'intro_rate_period_std', 'debt_to_income_ratio_std', 'income_std',
-               'loan_amount_std', 'no_intro_rate_period_std']
-```
-
-∗ **State the columns used as targets in your group’s best remediated model**: 
-∗ **State the type of your group’s best remediated model**: 
-∗ **State the software used to implement your group’s best remediated model**: 
-∗ **State the version of the modeling software for your group’s best remediated model**: 
+∗ **State the columns used as inputs in your group’s best remediated model**: 'debt_to_income_ratio_missing', 'conforming', 'term_360', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'income_std', 'loan_amount_std', 'no_intro_rate_period_std'
+∗ **State the columns used as targets in your group’s best remediated model**: 'high_priced'
+∗ **State the type of your group’s best remediated model**: Explainable Boosting Machine (EBM)
+∗ **State the software used to implement your group’s best remediated model**: Python, Interpret
+∗ **State the version of the modeling software for your group’s best remediated model**: 3.11.12, 0.6.10
 ∗ **State the hyperparameters or other settings of your group’s best remediated model**:
 
 ```
@@ -109,6 +96,7 @@ rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
               'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 3,
               'n_jobs': 4, 'early_stopping_rounds': 100, 'random_state': 12345}
 ```
+
 ### Quantitative Analysis
 
 NOTE: You should briefly address your other models as “alternative approaches” in
