@@ -11,7 +11,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 DISCLAIMER: This notebook is not legal or compliance advice.
 
 
-# Credit Line Increase Model Card
+# Home Mortgage Disclosure Act (HMDA) Annual Percentage Rate (APR) Model Card
 
 ### Basic Information
 
