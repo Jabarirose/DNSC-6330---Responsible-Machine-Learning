@@ -72,16 +72,14 @@ NOTES: Have External Link to data
 NOTES: Have External Link to data
 
 NEW:
-∗ **State the source of evaluation (or “test”) data**: 
-∗ **State the number of rows in evaluation (or “test”) data**: 
-∗ **State any differences in columns between training and evaluation (or “test”) data**: 
+- **State the source of evaluation (or “test”) data**: GW DNSC 6330 Class Github, [Visit GitHub]([https://github.com](https://github.com/jphall663/GWU_rml/tree/master/assignments/data)), email `jphall@gwu.edu` for more information
+- **State the number of rows in evaluation (or “test”) data**: 19831 rows
+- **State any differences in columns between training and evaluation (or “test”) data**: The test data does not contain the y-column/target variable 'high_priced'.
 
 OLD: 
 * **Source of test data**: GWU Blackboard, email `jphall@gwu.edu` for more information
-* **Number of rows in test data**: 7,500
-* **State any differences in columns between training and test data**: None
 
-### Model details - DONE
+### Model Details - DONE
 
 - **State the columns used as inputs in your group’s best remediated model**: 'debt_to_income_ratio_missing', 'conforming', 'term_360', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'income_std', 'loan_amount_std', 'no_intro_rate_period_std'
 - **State the columns used as targets in your group’s best remediated model**: 'high_priced'
