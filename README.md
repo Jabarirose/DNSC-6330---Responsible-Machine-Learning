@@ -83,12 +83,12 @@ OLD:
 
 ### Model details - DONE
 
-∗ **State the columns used as inputs in your group’s best remediated model**: 'debt_to_income_ratio_missing', 'conforming', 'term_360', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'income_std', 'loan_amount_std', 'no_intro_rate_period_std'
-∗ **State the columns used as targets in your group’s best remediated model**: 'high_priced'
-∗ **State the type of your group’s best remediated model**: Explainable Boosting Machine (EBM)
-∗ **State the software used to implement your group’s best remediated model**: Python, Interpret
-∗ **State the version of the modeling software for your group’s best remediated model**: 3.11.12, 0.6.10
-∗ **State the hyperparameters or other settings of your group’s best remediated model**:
+- **State the columns used as inputs in your group’s best remediated model**: 'debt_to_income_ratio_missing', 'conforming', 'term_360', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'income_std', 'loan_amount_std', 'no_intro_rate_period_std'
+- **State the columns used as targets in your group’s best remediated model**: 'high_priced'
+- **State the type of your group’s best remediated model**: Explainable Boosting Machine (EBM)
+- **State the software used to implement your group’s best remediated model**: Python, Interpret
+- **State the version of the modeling software for your group’s best remediated model**: 3.11.12, 0.6.10
+- **State the hyperparameters or other settings of your group’s best remediated model**:
 
 ```
 rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
