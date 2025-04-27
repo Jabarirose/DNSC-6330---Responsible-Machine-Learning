@@ -83,10 +83,6 @@ OLD:
 
 ### Model details
 OLD: 
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
 * **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
 * **Type of model**: Decision Tree 
 * **Software used to implement the model**: Python, scikit-learn
@@ -94,6 +90,13 @@ OLD:
 
 NEW:
 ∗ **State the columns used as inputs in your group’s best remediated model**: 
+
+```
+rem_x_names = ['debt_to_income_ratio_missing', 'conforming', 'term_360',
+               'intro_rate_period_std', 'debt_to_income_ratio_std', 'income_std',
+               'loan_amount_std', 'no_intro_rate_period_std']
+```
+
 ∗ **State the columns used as targets in your group’s best remediated model**: 
 ∗ **State the type of your group’s best remediated model**: 
 ∗ **State the software used to implement your group’s best remediated model**: 
@@ -105,7 +108,6 @@ rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
               'outer_bags': 8, 'inner_bags': 4, 'learning_rate': 0.05,
               'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 3,
               'n_jobs': 4, 'early_stopping_rounds': 100, 'random_state': 12345}
-
 ```
 ### Quantitative Analysis
 
