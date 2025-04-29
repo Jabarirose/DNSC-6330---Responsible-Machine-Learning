@@ -34,6 +34,7 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 - **State how training data was divided into training and validation data**: 70% training and 30% validation
 - **State the number of rows in training and validation data**: 112253 training rows and 48085 validation rows
 - **Define the meaning of all training data columns**:
+  
     *high priced*: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of 
     similar mortgages.
 
