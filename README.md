@@ -31,8 +31,8 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 ### Training Data - DONE
 
 - **State the source of training data**: [GW DNSC 6330 Class Github Training Data Zip](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
-- **State how training data was divided into training and validation data**: 70% training and 30% validation
-- **State the number of rows in training and validation data**: 112253 training rows and 48085 validation rows
+- **State how training data was divided into training and validation data**: 70% training and 30% validation.
+- **State the number of rows in training and validation data**: 112253 training rows and 48085 validation rows.
 - **Define the meaning of all training data columns**:
   
     *high priced*: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of 
@@ -58,7 +58,7 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 
     *term 360*: Binary numeric input, whether the mortgage is a standard 360 month mortgage (1) or a different type of mortgage (0).
 
-- **Define the meaning of all engineered columns**: no engineered features
+- **Define the meaning of all engineered columns**: no engineered features.
 
 NOTE: UPDATE WITH Data dictionary is in assignment 1 
 
