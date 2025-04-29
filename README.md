@@ -28,7 +28,7 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 - **Describe the intended users for your group’s best remediated model**: This model is designed for students and individuals interested in learning about bias in machine learning models.
 - **State whether your group’s best remediated model can or cannot be used for any additional purposes**: Our model cannot be used for any additional purposes. Any use beyond an educational example is out-of-scope.
 
-### Training Data - STARTED
+### Training Data - DONE
 
 - **State the source of training data**: [GW DNSC 6330 Class Github Training Data Zip](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
 - **State how training data was divided into training and validation data**: 70% training and 30% validation
