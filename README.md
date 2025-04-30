@@ -135,8 +135,11 @@ Figure 1. Correlation matrix for input features.
 NOTE: only place you write a short paragraph about bias, performance can drop during a recession
 
 - **Describe potential negative impacts of using your group’s best remediated model:**
-  - Consider math or software problems
-  - Consider real-world risks: who, what, when and how?
+  From a technical point of view, our model has two big weaknesses. First, it struggles to give reliable results when it sees something very different from what it saw during training—especially at the extreme ends of the scoring scale. This means it might be way too confident or not confident enough when predicting risk. Second, the tool we used (Interpret-EBM) doesn’t handle increasing or decreasing trends in income and risk very well. So, even though it makes sense to think that “higher income = lower risk,” that logic can fall apart in certain income ranges and lead to confusing or inaccurate results.
+
+These issues matter most for people who are right on the edge of being approved or denied—especially those with lower incomes or from minority backgrounds. That’s because their data often falls near the model’s weak spots. If the model wrongly labels someone as “high risk,” they might get denied a mortgage or be offered one with a high interest rate, making things worse for them financially. And during tough economic times, like a recession, the model’s accuracy can drop a lot—from an AUC of 0.75 down to 0.60—which means its predictions get even less reliable. Finally, if these flawed predictions are used in automated pricing systems, it can make things even worse by applying those errors across thousands of people—especially hurting the ones who are already at a disadvantage.
+![image](https://github.com/user-attachments/assets/5d5bbed6-72cf-474b-ae3b-694717384f75)
+
 
 - **Describe potential uncertainties relating to the impacts of using your group’s best remediated model:**
   - Consider math or software problems
