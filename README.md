@@ -36,8 +36,7 @@ DISCLAIMER: This notebook is not legal or compliance advice.
 - **Define the meaning of all training data columns**:
   | Column | description |
   |--------| ------------|
-  | **high priced**| Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of 
-    similar mortgages.|
+  | **high priced**| Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages.|
   |**conforming**| Binary numeric input, whether the mortgage conforms to normal standards (1), or whether the loan is different (0).|
   |**debt to income ratio std**|Numeric input, standardized debt-to-income ratio for mortgage applicants.|
   |**debt to income ratio missing**|Binary numeric input, missing marker (1) for debt to income ratio std.|
