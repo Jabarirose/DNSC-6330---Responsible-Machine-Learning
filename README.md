@@ -43,12 +43,10 @@ DISCLAIMER: This notebook is not legal or compliance advice.
   |**income std**| Numeric input, standardized income for mortgage applicants.|
   |**loan amount std**|Numeric input, standardized amount of the mortgage for applicants.|
   |**intro rate period std**| Numeric input, standardized introductory rate period for mortgage applicants.|
-  |**loan to value ratio std** |Numeric input, ratio of the mortgage size to the value of the property for mortgage
-applicants.|
+  |**loan to value ratio std** |Numeric input, ratio of the mortgage size to the value of the property for mortgage applicants.|
   |**no intro rate period std**| Binary numeric input, whether or not a mortgage does not include an introductory rate period.|
   |**property value std**|Numeric input, value of the mortgaged property.|
-  |**term 360**|Binary numeric input, whether the mortgage is a standard 360 month mortgage (1) or a different
-type of mortgage (0). |
+  |**term 360**|Binary numeric input, whether the mortgage is a standard 360 month mortgage (1) or a different type of mortgage (0). |
 
 
 - **Define the meaning of all engineered columns**: no engineered features.
