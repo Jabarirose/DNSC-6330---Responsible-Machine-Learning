@@ -120,6 +120,10 @@ Table 2. Validation AIR values for race and sex groups.
 - **Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group’s best remediated model.**:
 
 - ![image](https://github.com/user-attachments/assets/76115d4c-9a4f-4629-ad40-ed22d3583015)
+- ![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
+- ![image](https://github.com/user-attachments/assets/63e0dde2-606d-4eb6-ab0e-8ccddaa8dd03)
+
+
 
 - **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM), extreme gadient boosting (XGBoost) and explainable boosting machine (EBM). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
 
@@ -130,8 +134,7 @@ NOTE: Add something other than a heat map, use something more interesting!
 #### Correlation Heatmap - DONE
 
 ![Correlation Heatmap](Correlation_Matrix_for_Input_Features.png)
-![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
-![image](https://github.com/user-attachments/assets/63e0dde2-606d-4eb6-ab0e-8ccddaa8dd03)
+
 
 
 
