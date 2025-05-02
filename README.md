@@ -130,6 +130,10 @@ NOTE: Add something other than a heat map, use something more interesting!
 #### Correlation Heatmap - DONE
 
 ![Correlation Heatmap](Correlation_Matrix_for_Input_Features.png)
+![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
+![image](https://github.com/user-attachments/assets/63e0dde2-606d-4eb6-ab0e-8ccddaa8dd03)
+
+
 
 Figure 1. Correlation matrix for input features. 
 
