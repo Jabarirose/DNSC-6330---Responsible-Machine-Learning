@@ -165,20 +165,25 @@ During training, we ran into three notable surprises. First, a log-loss residual
 
 Negative Impacts:
 
-The EBM model can behave unpredictably when exposed to data far from its training distribution, especially at extreme values. This may lead to inaccurate risk scores that unfairly penalize applicants.
+1. Unpredictable Behavior on Unseen Inputs
+The EBM model tends to misbehave when it encounters inputs outside the range seen during training—particularly at extreme values. This can result in overconfident or underconfident risk predictions. In a real-world lending context, this could lead to unjust loan denials or unfavorable interest rates for certain applicants, especially those with unusual financial profiles.
 
-The model doesn’t naturally follow expected relationships like “higher income → lower risk.” In some income ranges, this causes misleading predictions that can disadvantage qualified borrowers.
+2. Lack of Monotonic Relationship with Income
+The model does not consistently learn logical trends like “higher income implies lower risk.” In fact, due to EBM’s binning approach, it can create splits where risk appears to increase with income in certain ranges. This can confuse stakeholders and produce unfair outcomes for high-income applicants who might be wrongly classified as risky.
 
 ▪ Uncertainties:
 
-Model results vary depending on data splits, initialization, and random seed—retraining the same configuration can yield noticeably different AUC scores.
+1. Model Instability Across Runs
+Even when using the same model configuration, outcomes varied based on how the data was split or randomized. Key metrics like AUC showed noticeable fluctuations between runs. This makes it difficult to confidently assess whether a model version is truly more reliable or simply benefited from favorable randomness.
 
-Fairness interventions like data rebalancing may introduce unintended bias. This raises uncertainty about how well the model will generalize to new or diverse populations.
+2. Risk of Bias from Remediation Steps
+During fairness remediation, we adjusted feature distributions and sampling strategies to improve metrics like AIR. However, these interventions may have unintentionally distorted real-world data patterns. As a result, the model’s performance on new, unbalanced populations remains uncertain and potentially less fair than intended.
 
 ▪ Unexpected Results:
 
-A log-loss residual check revealed 21 records with unusually high errors. Removing them helped stabilize training but also highlighted sensitivity to anomalies.
+1. Outliers in Log-Loss Residuals
+A residual analysis revealed 21 data points with extremely high log-loss values (>7), indicating poor model fit. We removed these outliers to smooth training, but their presence highlighted how a small number of anomalous records can heavily influence EBM’s performance. This suggests a need for robust anomaly detection.
 
-When tested under simulated recession conditions, the model’s AUC dropped from 0.7484 to 0.6045, showing that its reliability decreases sharply under stress.
-
+2. Fragility Under Economic Stress
+In a simulated recession scenario, where income and property values were adjusted downward, the model’s AUC dropped dramatically from 0.7484 to 0.6045. This sharp decline shows that the model is not resilient to major shifts in economic conditions and could produce unreliable predictions during financial downturns.
 
