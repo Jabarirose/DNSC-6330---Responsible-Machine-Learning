@@ -162,3 +162,23 @@ In the real world, conditions can change fast. Things like interest rates or how
 
 * **Describe any unexpected or results encountered during training**
 During training, we ran into three notable surprises. First, a log-loss residual analysis revealed a pocket of extreme outliers—just 21 records with residuals above 7—so we removed them to steady the model’s learning curve. Second, the model proved fragile in a recession stress test: when we simulated downturn conditions, its AUC tumbled from 0.7484 to 0.6045, underscoring how sharply performance can erode under major data shifts. Finally, our attempt to impose a “higher-income ⇒ lower-risk” monotonic constraint hit a roadblock because Interpret-EBM doesn’t yet support true monotonicity; we therefore had to perform a manual bin review to prevent counter-intuitive splits.
+
+Negative Impacts:
+
+The EBM model can behave unpredictably when exposed to data far from its training distribution, especially at extreme values. This may lead to inaccurate risk scores that unfairly penalize applicants.
+
+The model doesn’t naturally follow expected relationships like “higher income → lower risk.” In some income ranges, this causes misleading predictions that can disadvantage qualified borrowers.
+
+▪ Uncertainties:
+
+Model results vary depending on data splits, initialization, and random seed—retraining the same configuration can yield noticeably different AUC scores.
+
+Fairness interventions like data rebalancing may introduce unintended bias. This raises uncertainty about how well the model will generalize to new or diverse populations.
+
+▪ Unexpected Results:
+
+A log-loss residual check revealed 21 records with unusually high errors. Removing them helped stabilize training but also highlighted sensitivity to anomalies.
+
+When tested under simulated recession conditions, the model’s AUC dropped from 0.7484 to 0.6045, showing that its reliability decreases sharply under stress.
+
+
