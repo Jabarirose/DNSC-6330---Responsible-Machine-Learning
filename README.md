@@ -104,7 +104,7 @@ NOTE: Might need to run code for training AUC – run extra code to get this –
 
 | Train AUC | Validation AUC | Test AUC |
 | ------ | ------- | -------- |
-| 0.7494 | 0.7891  | 0.7687* |
+| 0.7494 | 0.7891  | 0.752* |
 
 Table 1. AUC values across data partitions. 
 
