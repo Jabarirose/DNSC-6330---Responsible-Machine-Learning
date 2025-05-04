@@ -99,7 +99,7 @@ Fig 2 – Partial dependence of standardized property value on EBM predictions.
 
 
   ![image](https://github.com/user-attachments/assets/ed63a494-f523-42ca-a534-3e3c8979d827)
-Fig 3 Pareto Plot of Model Performance vs Model Bias 
+Fig 3  Plot of Model Performance vs Model Bias 
 
 
 - ![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
