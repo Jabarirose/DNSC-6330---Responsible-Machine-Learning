@@ -123,25 +123,25 @@ Figure 7. Correlation matrix for input features.
 
 - **Describe potential negative impacts of using your group’s best remediated model:**
 
-1. **Unpredictable behavior on unseen inputs**. <br>
+1. Unpredictable behavior on unseen inputs. <br>
 The EBM model tends to misbehave when it encounters inputs outside the range seen during training—particularly at extreme values. This can result in overconfident or underconfident risk predictions. In a real-world lending context, this could lead to unjust loan denials or unfavorable interest rates for certain applicants, especially those with unusual financial profiles.
 
-2. **Lack of monotonic relationship with income**. <br>
+2. Lack of monotonic relationship with income. <br>
 The model does not consistently learn logical trends like “higher income implies lower risk.” In fact, due to EBM’s binning approach, it can create splits where risk appears to increase with income in certain ranges. This can confuse stakeholders and produce unfair outcomes for high-income applicants who might be wrongly classified as risky.
 
 - **Describe potential uncertainties relating to the impacts of using your group’s best remediated model:**
 
-1. **Model instability across runs**. <br>
+1. Model instability across runs. <br>
 Even when using the same model configuration, outcomes varied based on how the data was split or randomized. Key metrics like AUC showed noticeable fluctuations between runs. This makes it difficult to confidently assess whether a model version is truly more reliable or simply benefited from favorable randomness.
 
-2. **Risk of bias from remediation steps**. <br>
+2. Risk of bias from remediation steps. <br>
 During fairness remediation, we adjusted feature distributions and sampling strategies to improve metrics like AIR. However, these interventions may have unintentionally distorted real-world data patterns. As a result, the model’s performance on new, unbalanced populations remains uncertain and potentially less fair than intended.
 
 * **Describe any unexpected or results encountered during training**
 
-1. **Outliers in log-loss residuals**. <br>
+1. Outliers in log-loss residuals. <br>
  A residual analysis revealed 21 data points with extremely high log-loss values (>7), indicating poor model fit. We removed these outliers to smooth training, but their presence highlighted how a small number of anomalous records can heavily influence EBM’s performance. This suggests a need for robust anomaly detection.
 
-2. **Fragility under economic stress**. <br>
+2. Fragility under economic stress. <br>
 In a simulated recession scenario, where income and property values were adjusted downward, the model’s AUC dropped dramatically from 0.7484 to 0.6045. This sharp decline shows that the model is not resilient to major shifts in economic conditions and could produce unreliable predictions during financial downturns.
 
