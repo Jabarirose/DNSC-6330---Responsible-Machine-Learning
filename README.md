@@ -93,7 +93,7 @@ Figure 1. Histograms for data exploration from assignment 1.
 
 Figure 2. Partial dependence of standardized property value on EBM predictions from assignment 2.
 
-![image](https://github.com/user-attachments/assets/e4502fc7-0be3-4c82-b69d-186bb5301411)
+![image](https://github.com/user-attachments/assets/2455ca29-cfc9-430c-ae7a-ba406e01cb4e)
 
 Figure 3. Global Feature Importance Plots from Assignment 3 
 
