@@ -136,8 +136,9 @@ During fairness remediation, we adjusted feature distributions and sampling stra
 * **Describe any unexpected or results encountered during training**
 
 1. Outliers in Log-Loss Residuals
+   
 A residual analysis revealed 21 data points with extremely high log-loss values (>7), indicating poor model fit. We removed these outliers to smooth training, but their presence highlighted how a small number of anomalous records can heavily influence EBM’s performance. This suggests a need for robust anomaly detection.
 
-2. Fragility Under Economic Stress
+3. Fragility Under Economic Stress
 In a simulated recession scenario, where income and property values were adjusted downward, the model’s AUC dropped dramatically from 0.7484 to 0.6045. This sharp decline shows that the model is not resilient to major shifts in economic conditions and could produce unreliable predictions during financial downturns.
 
