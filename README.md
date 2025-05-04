@@ -95,7 +95,7 @@ Figure 2. Partial dependence of standardized property value on EBM predictions f
 
 ![image](https://github.com/user-attachments/assets/2455ca29-cfc9-430c-ae7a-ba406e01cb4e)
 
-Figure 3. Global Feature Importance Plot from Assignment 2
+Figure 3. Global feature importance plot from assignment 2
 
 ![image](https://github.com/user-attachments/assets/ed63a494-f523-42ca-a534-3e3c8979d827)
 
