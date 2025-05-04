@@ -37,6 +37,8 @@ https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_2/assign
   |**property value std**|Numeric input, value of the mortgaged property.|
   |**term 360**|Binary numeric input, whether the mortgage is a standard 360 month mortgage (1) or a different type of mortgage (0). |
 
+Table 1. Description of training data columns. 
+
 - **Define the meaning of all engineered columns**: no engineered features.
 
 ### Evaluation Data - DONE
@@ -78,7 +80,7 @@ NOTE: Might need to run code for training AUC – run extra code to get this –
 | ------ | ------- | -------- |
 | 0.7494 | 0.7553  | 0.7502* |
 
-Table 1. AUC values across data partitions. 
+Table 2. AUC values across data partitions. 
 
 | Group | Validation AIR |
 |-------|-----|
@@ -87,7 +89,7 @@ Table 1. AUC values across data partitions.
 | Asian vs. White | 1.098 |
 | Female vs. Male | 1.245 |
 
-Table 2. Validation AIR values for race and sex groups. 
+Table 3. Validation AIR values for race and sex groups. 
 
 - **Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group’s best remediated model.**:
 
