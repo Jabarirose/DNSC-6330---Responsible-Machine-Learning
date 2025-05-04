@@ -1,6 +1,6 @@
 # Predicting High Priced Loans Model Card
 
-### Basic Information - DONE
+### Basic Information
 
 - **Person or organization developing model**: Copyright (c) 2021 - 2025 Patrick Hall (jphall@gwu.edu), Hanna Courtot (Hanna.Courtot@gwu.edu), Elias Makanganise (eliasm@gwu.edu), Jabari Rose (Jabari.rose@gwmail.gwu.edu) and Pratyush Singhal (pratyush.singhal@gwu.edu)
 - **Model creation date**: May, 2021
@@ -10,14 +10,14 @@
 - **Model implementation code**: [Assignment 1.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_1/assign_1_template.ipynb), (Assignment 2.ipynb][
 https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_2/assign_2_template.ipynb), [Assignment 3.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_3/assign_3_template.ipynb), [Assignment 4.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_4/assign_4_template.ipynb), [Assignment 5.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_5/assign_5_template.ipynb) and [Assignment 6.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project)
 
-### Intended Use - DONE
+### Intended Use
  
 - **Describe the business value of your group’s best remediated model**: This model is not intended to generate any value for commercial/business purposes.
 - **Describe how your group’s best remediated model is designed to be used**: This model is designed solely for educational purposes.
 - **Describe the intended users for your group’s best remediated model**: This model is designed for students and individuals interested in learning about bias in machine learning models.
 - **State whether your group’s best remediated model can or cannot be used for any additional purposes**: Our model cannot be used for any additional purposes. Any use beyond an educational example is out-of-scope.
 
-### Training Data - DONE
+### Training Data
 
 - **State the source of training data**: [GW DNSC 6330 Class Github Training Data Zip](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
 - **State how training data was divided into training and validation data**: 70% training and 30% validation.
@@ -41,13 +41,13 @@ Table 1. Description of training data columns.
 
 - **Define the meaning of all engineered columns**: no engineered features.
 
-### Evaluation Data - DONE
+### Evaluation Data
 
 - **State the source of evaluation (or “test”) data**: [GW DNSC 6330 Class Github Test Data Zip](https://github.com/jphall663/GWU_rml/tree/master/assignments/data), email `jphall@gwu.edu` for more information
 - **State the number of rows in evaluation (or “test”) data**: 19831 rows
 - **State any differences in columns between training and evaluation (or “test”) data**: The test data does not contain the y-column/target variable 'high_priced'.
 
-### Model Details - DONE
+### Model Details
 
 - **State the columns used as inputs in your group’s best remediated model**: 'debt_to_income_ratio_missing', 'conforming', 'term_360', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'income_std', 'loan_amount_std', 'no_intro_rate_period_std'
 - **State the columns used as targets in your group’s best remediated model**: 'high_priced'
@@ -63,7 +63,7 @@ rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
               'n_jobs': 4, 'early_stopping_rounds': 100, 'random_state': 12345}
 ```
 
-### Quantitative Analysis - STARTED
+### Quantitative Analysis
 
 NOTE: You should briefly address your other models as “alternative approaches” in the Quantitative analysis section, and point to why your main model is a better choice.
 
@@ -118,7 +118,7 @@ Fig 5 - Outlier Analysis
 
 NOTE: Add something other than a heat map, use something more interesting!
 
-#### Correlation Heatmap - DONE
+#### Correlation Heatmap
 
 ![Correlation Heatmap](Correlation_Matrix_for_Input_Features.png)
 
