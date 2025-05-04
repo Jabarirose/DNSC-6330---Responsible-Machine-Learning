@@ -68,8 +68,10 @@ NOTE: You should briefly address your other models as “alternative approaches�
 - **State the metrics used to evaluate your group’s best remediated model**: Area Under the Curve (AUC) and Adverse Impact Ratio (AIR)
 - **State the values of the metrics for training, validation, and evaluation (or “test”) data – evaluation (or “test”) metrics come from the most recent class full evaluation results, link under Assignment 1.**: 
 
-NOTE: Use Validation and test AUC from bottom assignment 5!
+NOTE: Use Train and Validation AUC from bottom assignment 5!
+
 NOTE: Take average of all 5 AUC from assignment 5!
+
 NOTE: Might need to run code for training AUC – run extra code to get this – Run “EVM perf” on the training instead of the validation, Test AUC is the average, take each fold AUC is the average of the 5, Assignment 3 full validation results!
 
 | Train AUC | Validation AUC | Test AUC |
