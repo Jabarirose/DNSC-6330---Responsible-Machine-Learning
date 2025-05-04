@@ -130,7 +130,7 @@ The model does not consistently learn logical trends like “higher income impli
 1. Model Instability Across Runs
 Even when using the same model configuration, outcomes varied based on how the data was split or randomized. Key metrics like AUC showed noticeable fluctuations between runs. This makes it difficult to confidently assess whether a model version is truly more reliable or simply benefited from favorable randomness.
 
-2. Risk of Bias from Remediation Steps
+2. Risk of Bias from Remediation Steps/
 During fairness remediation, we adjusted feature distributions and sampling strategies to improve metrics like AIR. However, these interventions may have unintentionally distorted real-world data patterns. As a result, the model’s performance on new, unbalanced populations remains uncertain and potentially less fair than intended.
 
 * **Describe any unexpected or results encountered during training**
