@@ -11,9 +11,8 @@
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
 
 DISCLAIMER: These notebooks are not legal or compliance advice.
-- **Model implementation code**: [Assignment 1](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_1/assign_1_template.ipynb)
-
-[DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
+- **Model implementation code**: [Assignment 1.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_1/assign_1_template.ipynb), [Assignment 2.ipynb][
+https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_2/assign_2_template.ipynb), [Assignment 3.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_3/assign_3_template.ipynb), [Assignment 4.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_4/assign_4_template.ipynb), [Assignment 5.ipynb](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_5/assign_5_template.ipynb) and [Assignment 6.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project)
 
 ### Intended Use - DONE
  
