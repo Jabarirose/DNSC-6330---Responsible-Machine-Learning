@@ -127,24 +127,7 @@ Figure 1. Correlation matrix for input features.
 
 ### Ethical Considerations
 
-NOTE: only place you write a short paragraph about bias, performance can drop during a recession
-
 - **Describe potential negative impacts of using your group’s best remediated model:**
-From a technical point of view, our model has two big weaknesses. First, it struggles to give reliable results when it sees something very different from what it saw during training—especially at the extreme ends of the scoring scale. This means it might be way too confident or not confident enough when predicting risk. Second, the tool we used (Interpret-EBM) doesn’t handle increasing or decreasing trends in income and risk very well. So, even though it makes sense to think that “higher income = lower risk,” that logic can fall apart in certain income ranges and lead to confusing or inaccurate results.
-
-These issues matter most for people who are right on the edge of being approved or denied—especially those with lower incomes or from minority backgrounds. That’s because their data often falls near the model’s weak spots. If the model wrongly labels someone as “high risk,” they might get denied a mortgage or be offered one with a high interest rate, making things worse for them financially. And during tough economic times, like a recession, the model’s accuracy can drop a lot—from an AUC of 0.75 down to 0.60—which means its predictions get even less reliable. Finally, if these flawed predictions are used in automated pricing systems, it can make things even worse by applying those errors across thousands of people—especially hurting the ones who are already at a disadvantage.
-
-- **Describe potential uncertainties relating to the impacts of using your group’s best remediated model:**
-  There are still a bunch of unknowns when it comes to how the model works behind the scenes. How well it performs can change just based on how it’s set up—for example, things like how we split the data, how many models we combine, and even the random number it starts with.  Just rerunning the same setup could make the model’s score go up or down noticeably.
-
-Also, when we cleaned and rebalanced the data to make things more even, we may have accidentally introduced some bias. That means the model might not do a great job when it’s faced with new or different data that it hasn’t seen before.
-
-In the real world, conditions can change fast. Things like interest rates or how people handle debt can shift, and if they do, the model might rely on outdated patterns that no longer apply. On top of that, some groups of people weren’t well represented in the data we trained on, so we’re not totally sure how well the model will work for them—which could lead to unfair results.
-
-* **Describe any unexpected or results encountered during training**
-During training, we ran into three notable surprises. First, a log-loss residual analysis revealed a pocket of extreme outliers—just 21 records with residuals above 7—so we removed them to steady the model’s learning curve. Second, the model proved fragile in a recession stress test: when we simulated downturn conditions, its AUC tumbled from 0.7484 to 0.6045, underscoring how sharply performance can erode under major data shifts. Finally, our attempt to impose a “higher-income ⇒ lower-risk” monotonic constraint hit a roadblock because Interpret-EBM doesn’t yet support true monotonicity; we therefore had to perform a manual bin review to prevent counter-intuitive splits.
-
-Negative Impacts:
 
 1. Unpredictable Behavior on Unseen Inputs
 The EBM model tends to misbehave when it encounters inputs outside the range seen during training—particularly at extreme values. This can result in overconfident or underconfident risk predictions. In a real-world lending context, this could lead to unjust loan denials or unfavorable interest rates for certain applicants, especially those with unusual financial profiles.
@@ -152,7 +135,7 @@ The EBM model tends to misbehave when it encounters inputs outside the range see
 2. Lack of Monotonic Relationship with Income
 The model does not consistently learn logical trends like “higher income implies lower risk.” In fact, due to EBM’s binning approach, it can create splits where risk appears to increase with income in certain ranges. This can confuse stakeholders and produce unfair outcomes for high-income applicants who might be wrongly classified as risky.
 
-▪ Uncertainties:
+- **Describe potential uncertainties relating to the impacts of using your group’s best remediated model:**
 
 1. Model Instability Across Runs
 Even when using the same model configuration, outcomes varied based on how the data was split or randomized. Key metrics like AUC showed noticeable fluctuations between runs. This makes it difficult to confidently assess whether a model version is truly more reliable or simply benefited from favorable randomness.
@@ -160,7 +143,7 @@ Even when using the same model configuration, outcomes varied based on how the d
 2. Risk of Bias from Remediation Steps
 During fairness remediation, we adjusted feature distributions and sampling strategies to improve metrics like AIR. However, these interventions may have unintentionally distorted real-world data patterns. As a result, the model’s performance on new, unbalanced populations remains uncertain and potentially less fair than intended.
 
-▪ Unexpected Results: 
+* **Describe any unexpected or results encountered during training**
 
 1. Outliers in Log-Loss Residuals
 A residual analysis revealed 21 data points with extremely high log-loss values (>7), indicating poor model fit. We removed these outliers to smooth training, but their presence highlighted how a small number of anomalous records can heavily influence EBM’s performance. This suggests a need for robust anomaly detection.
