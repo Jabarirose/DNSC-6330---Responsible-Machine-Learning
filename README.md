@@ -11,15 +11,7 @@
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
 
 DISCLAIMER: These notebooks are not legal or compliance advice.
-- **Model implementation code**:
- | Assignment | Link |
-  |--------| ------------|
-  | **1**| Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages.|
-  |**2**| Binary numeric input, whether the mortgage conforms to normal standards (1), or whether the loan is different (0).|
-  |**3**|Numeric input, standardized debt-to-income ratio for mortgage applicants.|
-  |**4**|Binary numeric input, missing marker (1) for debt to income ratio std.|
-  |**5**| Numeric input, standardized income for mortgage applicants.|
-  |**6**|Numeric input, standardized amount of the mortgage for applicants.|
+- **Model implementation code**: [Assignment 1](https://github.com/jphall663/GWU_rml/blob/master/assignments/assignment_1/assign_1_template.ipynb)
 
 [DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
 
@@ -36,7 +28,7 @@ DISCLAIMER: These notebooks are not legal or compliance advice.
 - **State how training data was divided into training and validation data**: 70% training and 30% validation.
 - **State the number of rows in training and validation data**: 112253 training rows and 48085 validation rows.
 - **Define the meaning of all training data columns**:
-  | Feature | Description |
+  | **Feature** | **Description** |
   |--------| ------------|
   | **high priced**| Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages.|
   |**conforming**| Binary numeric input, whether the mortgage conforms to normal standards (1), or whether the loan is different (0).|
