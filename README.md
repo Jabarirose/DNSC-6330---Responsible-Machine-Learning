@@ -87,7 +87,7 @@ Table 3. Validation AIR values for race and sex groups.
 
 ![image](https://github.com/user-attachments/assets/561e527a-1fc5-4d3e-8410-c00613ddcd57)
 
-Figure 1. Histograms for data xxploration from assignment 1.
+Figure 1. Histograms for data exploration from assignment 1.
 
 ![image](https://github.com/user-attachments/assets/76115d4c-9a4f-4629-ad40-ed22d3583015)  
 
