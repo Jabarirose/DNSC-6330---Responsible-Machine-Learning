@@ -106,8 +106,6 @@ Figure 5. Outlier Analysis.
 
 (**HINT**: Test AUC taken from https://github.com/jphall663/GWU_rml/blob/master/assignments/model_eval_2023_06_21_12_52_47.csv)
 
-NOTE: Add something other than a heat map, use something more interesting!
-
 #### Correlation Heatmap
 
 ![Correlation Heatmap](Correlation_Matrix_for_Input_Features.png)
