@@ -101,8 +101,10 @@ Fig 2 – Partial dependence of standardized property value on EBM predictions.
   ![image](https://github.com/user-attachments/assets/ed63a494-f523-42ca-a534-3e3c8979d827)
 Fig 3 Pareto Plot of Model Performance vs Model Bias 
 
+
 - ![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
 Fig 4 – Global variable importance for H2O Random Forest model, highlighting income and intro rate period as top predictors.
+
 
  - ![image](https://github.com/user-attachments/assets/5f0a77a2-8046-482c-952e-d5e3eb69f380)
 Fig 5 - Outlier Analysis
