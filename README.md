@@ -1,6 +1,6 @@
 # Predicting High Priced Loans Model Card
 
-### Basic Information - STARTED
+### Basic Information - DONE
 
 - **Person or organization developing model**: Copyright (c) 2021 - 2025 Patrick Hall (jphall@gwu.edu), Hanna Courtot (Hanna.Courtot@gwu.edu), Elias Makanganise (eliasm@gwu.edu), Jabari Rose (Jabari.rose@gwmail.gwu.edu) and Pratyush Singhal (pratyush.singhal@gwu.edu)
 - **Model creation date**: May, 2021
