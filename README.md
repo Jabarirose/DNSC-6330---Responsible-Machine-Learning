@@ -103,21 +103,9 @@ Table 2. Validation AIR values for race and sex groups.
 
 - ![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
   Fig 4 – Global variable importance for H2O Random Forest model, highlighting income and intro rate period as top predictors.
-- 
-- ![image](https://github.com/user-attachments/assets/63e0dde2-606d-4eb6-ab0e-8ccddaa8dd03)
 
  - ![image](https://github.com/user-attachments/assets/5f0a77a2-8046-482c-952e-d5e3eb69f380)
    Fig 5 - Outlier Analysis
-
-
-- ![image](https://github.com/user-attachments/assets/76115d4c-9a4f-4629-ad40-ed22d3583015)
-  Fig 2 – Partial dependence of standardized property value on EBM predictions.
-  
-- ![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
-  Fig 4 – Global variable importance for H2O Random Forest model, highlighting income and intro rate period as top predictors.
-- 
-- ![image](https://github.com/user-attachments/assets/63e0dde2-606d-4eb6-ab0e-8ccddaa8dd03)
-
 
 
 - **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM) and extreme gadient boosting (XGBoost). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
