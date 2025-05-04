@@ -11,7 +11,17 @@
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
 
 DISCLAIMER: These notebooks are not legal or compliance advice.
-- **Model implementation code**: [DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
+- **Model implementation code**:
+ | Assignment | Link |
+  |--------| ------------|
+  | **1**| Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages.|
+  |**2**| Binary numeric input, whether the mortgage conforms to normal standards (1), or whether the loan is different (0).|
+  |**3**|Numeric input, standardized debt-to-income ratio for mortgage applicants.|
+  |**4**|Binary numeric input, missing marker (1) for debt to income ratio std.|
+  |**5**| Numeric input, standardized income for mortgage applicants.|
+  |**6**|Numeric input, standardized amount of the mortgage for applicants.|
+
+[DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
 
 ### Intended Use - DONE
  
