@@ -65,16 +65,8 @@ rem_params = {'max_bins': 512, 'max_interaction_bins': 64, 'interactions': 10,
 
 ### Quantitative Analysis
 
-NOTE: You should briefly address your other models as “alternative approaches” in the Quantitative analysis section, and point to why your main model is a better choice.
-
 - **State the metrics used to evaluate your group’s best remediated model**: Area Under the Curve (AUC) and Adverse Impact Ratio (AIR)
 - **State the values of the metrics for training, validation, and evaluation (or “test”) data – evaluation (or “test”) metrics come from the most recent class full evaluation results, link under Assignment 1.**: 
-
-NOTE: Use Train and Validation AUC from bottom assignment 5!
-
-NOTE: Take average of all 5 AUC from assignment 5!
-
-NOTE: Might need to run code for training AUC – run extra code to get this – Run “EVM perf” on the training instead of the validation, Test AUC is the average, take each fold AUC is the average of the 5, Assignment 3 full validation results!
 
 | Train AUC | Validation AUC | Test AUC |
 | ------ | ------- | -------- |
@@ -110,7 +102,7 @@ Figure 4. Global variable importance for H2O Random Forest model, highlighting i
  - ![image](https://github.com/user-attachments/assets/5f0a77a2-8046-482c-952e-d5e3eb69f380)
 Figure 5. Outlier Analysis.
 
-- **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM) and extreme gadient boosting (XGBoost). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
+- **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM) and extreme gadient boosting (XGBoost). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb). However, our EBM model demonstrated the highest AUC and maintained an AIR above the 0.9 threshold, making it the most suitable choice for further implementation.
 
 (**HINT**: Test AUC taken from https://github.com/jphall663/GWU_rml/blob/master/assignments/model_eval_2023_06_21_12_52_47.csv)
 
