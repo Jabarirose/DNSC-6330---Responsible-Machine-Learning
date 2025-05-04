@@ -94,23 +94,21 @@ Table 3. Validation AIR values for race and sex groups.
 - **Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group’s best remediated model.**:
 
 - - ![image](https://github.com/user-attachments/assets/561e527a-1fc5-4d3e-8410-c00613ddcd57)
-Fig 1 - Histograms for Data Exploration 
+Figure 1. Histograms for Data Exploration.
 
 - ![image](https://github.com/user-attachments/assets/76115d4c-9a4f-4629-ad40-ed22d3583015)  
-Fig 2 – Partial dependence of standardized property value on EBM predictions.
+Figure 2. Partial dependence of standardized property value on EBM predictions.
 
 
   ![image](https://github.com/user-attachments/assets/ed63a494-f523-42ca-a534-3e3c8979d827)
-Fig 3  Plot of Model Performance vs Model Bias 
+Figure 3.  Plot of Model Performance vs Model Bias. 
 
 
 - ![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
-Fig 4 – Global variable importance for H2O Random Forest model, highlighting income and intro rate period as top predictors.
-
+Figure 4. Global variable importance for H2O Random Forest model, highlighting income and intro rate period as top predictors.
 
  - ![image](https://github.com/user-attachments/assets/5f0a77a2-8046-482c-952e-d5e3eb69f380)
-Fig 5 - Outlier Analysis
-
+Figure 5. Outlier Analysis.
 
 - **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM) and extreme gadient boosting (XGBoost). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb).
 
@@ -125,7 +123,7 @@ NOTE: Add something other than a heat map, use something more interesting!
 
 
 
-Figure 1. Correlation matrix for input features. 
+Figure 6. Correlation matrix for input features. 
 
 ### Ethical Considerations
 
