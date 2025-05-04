@@ -93,17 +93,21 @@ Figure 1. Histograms for data exploration from assignment 1.
 
 Figure 2. Partial dependence of standardized property value on EBM predictions from assignment 2.
 
+![image](https://github.com/user-attachments/assets/e4502fc7-0be3-4c82-b69d-186bb5301411)
+
+Figure 3. Global Feature Importance Plots from Assignment 3 
+
 ![image](https://github.com/user-attachments/assets/ed63a494-f523-42ca-a534-3e3c8979d827)
 
-Figure 3.  Plot of model performance vs model bias from assignment 3. 
+Figure 4.  Plot of model performance vs model bias from assignment 3. 
 
 ![image](https://github.com/user-attachments/assets/9f30165c-a525-42fc-8df1-2a63da0b25c8)
 
-Figure 4. Global variable importance for H2O random forest model, highlighting income and intro rate period as top predictors from assignment 4.
+Figure 5. Global variable importance for H2O random forest model, highlighting income and intro rate period as top predictors from assignment 4.
 
 ![image](https://github.com/user-attachments/assets/5f0a77a2-8046-482c-952e-d5e3eb69f380)
 
-Figure 5. Outlier analysis from assignment 5.
+Figure 6. Outlier analysis from assignment 5.
 
 - **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM) and extreme gradient boosting (XGBoost). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb). However, our EBM model demonstrated the highest AUC and maintained an AIR above the 0.9 threshold, making it the most suitable choice for further implementation.
 
@@ -113,7 +117,7 @@ Figure 5. Outlier analysis from assignment 5.
 
 ![Correlation Heatmap](Correlation_Matrix_for_Input_Features.png)
 
-Figure 6. Correlation matrix for input features. 
+Figure 7. Correlation matrix for input features. 
 
 ### Ethical Considerations
 
