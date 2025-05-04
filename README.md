@@ -111,8 +111,6 @@ Figure 6. Outlier analysis from assignment 5.
 
 - **Address other alternative models considered**: We tried using the general linear model (GLM) with elastic net, monotonic gradient boosting machines (GBM) and extreme gradient boosting (XGBoost). The models tried can be found in [assigment 1](https://github.com/HannaCourtot/DNSC-6330---Responsible-Machine-Learning/blob/main/Group_5_assign_1.ipynb). However, our EBM model demonstrated the highest AUC and maintained an AIR above the 0.9 threshold, making it the most suitable choice for further implementation.
 
-(**HINT**: Test AUC taken from https://github.com/jphall663/GWU_rml/blob/master/assignments/model_eval_2023_06_21_12_52_47.csv)
-
 #### Correlation Heatmap
 
 ![Correlation Heatmap](Correlation_Matrix_for_Input_Features.png)
