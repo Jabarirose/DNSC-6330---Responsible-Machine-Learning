@@ -160,7 +160,7 @@ Even when using the same model configuration, outcomes varied based on how the d
 2. Risk of Bias from Remediation Steps
 During fairness remediation, we adjusted feature distributions and sampling strategies to improve metrics like AIR. However, these interventions may have unintentionally distorted real-world data patterns. As a result, the model’s performance on new, unbalanced populations remains uncertain and potentially less fair than intended.
 
-▪ Unexpected Results:
+▪ Unexpected Results: 
 
 1. Outliers in Log-Loss Residuals
 A residual analysis revealed 21 data points with extremely high log-loss values (>7), indicating poor model fit. We removed these outliers to smooth training, but their presence highlighted how a small number of anomalous records can heavily influence EBM’s performance. This suggests a need for robust anomaly detection.
